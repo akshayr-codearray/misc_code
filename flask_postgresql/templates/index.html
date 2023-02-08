@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Emp</title>
+</head>
+<body>
+<div class="content">
+    {% for emp in emps %}
+    <div class='book'>
+        <h3>#{{ emp[0] }} - {{ emp[1] }} BY {{ emp[2] }}</h3>
+        <i><p>(salary{{ emp[3] }})</p></i>
+        <p class='review'>{{ emp[4] }}</p>
+        <i><p>Added {{ emp[5] }}</p></i>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>
